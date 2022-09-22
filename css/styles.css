@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Clash Display', sans-serif;
+}
+
+body{
+ background-color: #967E76;
+}
+
+.title{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 15px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 3px solid black;
+    border-radius: 13px;
+    box-shadow: black 5px 5px 10px ;
+}
+
+.calculator-display{
+    background-color: white;
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-x: auto;
+}
+
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: #D7C0AE;
+    border: 1px solid black;
+    
+}
+
+.keypad-button:hover{
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 10px;
+}
+.bottom-right {
+    border-bottom-right-radius: 10px;
+}
+
+.calculator-display{
+    background-color: #D7C0AE;
+}
+
+.keypad-button.yellow{
+    background-color: #EEE3CB;
+}
+
+.keypad-button.large{
+    width: 50%;
+}
+
+.keypad-button.dark{
+    background-color: #967E76;
+}
+
+@media (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    .calculator{
+        width: 300px;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: black 3px 3px 8px ;
+    }
+    .calculator-display{
+        padding: 20px 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .calculator-keypad{
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+    .keypad-button{
+        padding: 10px 0;
+    }
+    .bottom-left {
+        border-bottom-left-radius: 10px;
+    }
+    .bottom-right {
+        border-bottom-right-radius: 10px;
+    }
+            
+}
